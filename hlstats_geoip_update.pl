@@ -61,7 +61,7 @@ for( $i = 0; $i < $maxid; $i++) {
 		$lng = (($lng eq "")?undef:$lng);
 		
 
-		print "ID: $i | Country Code: $country_code | Region: $region\n";
+		print "ID: $i | Country Code: $country_code | City: $city\n";
 
 		my $query = "UPDATE hlstats_Players SET city=?,state=?,country=?,flag=?,lat=?,lng=? WHERE playerId = ?";
 		if(!defined($lat)) {
