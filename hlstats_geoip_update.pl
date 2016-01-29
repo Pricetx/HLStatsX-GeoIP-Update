@@ -10,7 +10,7 @@ $dbname = "ENTER_DB_NAME";
 $dbhost = "localhost";
 $dbuser = "ENTER_DB_USER";
 $dbpass = "ENTER_DB_PASS";
-$geoip_path = "GeoLiteCity.dat"
+$geoip_path = "GeoLiteCity.dat";
 
 
 # DO NOT EDIT BELOW THIS POINT
