@@ -63,13 +63,13 @@ for( $i = 0; $i < $maxid; $i++) {
 
 		print "ID: $i | Country Code: $country_code | City: $city\n";
 
-		my $query = "UPDATE hlstats_Players SET city=?,state=?,country=?,flag=?,lat=?,lng=? WHERE playerId = ?";
-		if(!defined($lat)) {
-				$lat = "NULL";
-		}
-		if(!defined($lng)) {
-			$lng = "NULL";
-		}
+		$query = "UPDATE hlstats_Players SET city=?,state=?,country=?,flag=?,lat=?,lng=? WHERE playerId = ?";
+#		if(!defined($lat)) {
+#				$lat = "NULL";
+#		}
+#		if(!defined($lng)) {
+#			$lng = "NULL";
+#		}
 
 		$sth = $dbh->prepare($query);
 		$sth->execute($city, $state, $country, $flag, $lat, $lng, $i);
